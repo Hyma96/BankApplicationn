@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Transfer Amount Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 240, 240); 
+    text-align: center; 
+    padding-top: 50px; 
+  }
+
+  h3 {
+    color: rgb(0, 123, 255); 
+  }
+
+  form {
+    display: inline-block; 
+    background-color: rgb(255, 255, 255); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: inline-block;
+    width: 100px; 
+    text-align: left; 
+    color: rgb(34, 34, 34); 
+    font-weight: bold; 
+  }
+
+  input[type="text"] {
+    width: 200px; 
+    padding: 10px; 
+    border: 1px solid rgb(200, 200, 200); 
+    border-radius: 4px; 
+    margin-bottom: 15px; 
+  }
+
+  input[type="submit"] {
+    background-color: rgb(40, 167, 69); 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+  }
+
+  input[type="submit"]:hover {
+    background-color: rgb(33, 136, 56); 
+  }
+
+  br {
+    line-height: 10px; 
+  }
+
+  .button-container {
+    margin-top: 20px;
+  }
+
+  .home-button {
+    background-color: rgb(0, 123, 255);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .home-button:hover {
+    background-color: rgb(0, 90, 200);
+  }
+</style>
+</head>
+<body>
+
+<h3>Please enter the amount to be transferred</h3>
+<form action="Transfer" method="POST">
+  <label for="raccno">RAccNo</label>
+  <input type="text" id="raccno" name="raccno" required><br><br>
+  
+  <label for="amt">Amount</label>
+  <input type="text" id="amt" name="amt" required><br><br>
+
+  <label for="purpose">Purpose</label>
+  <input type="text" id="purpose" name="purpose" required><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+<div class="button-container">
+  <a href="Home.html" class="home-button">Go to Home</a>
+</div>
+
+</body>
+</html>

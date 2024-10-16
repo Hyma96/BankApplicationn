@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(240, 248, 255); 
+            color: rgb(51, 51, 51); 
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: rgb(0, 123, 255); 
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 123, 255); 
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: rgb(0, 86, 179); 
+        }
+        input[type="submit"] {
+            background-color: rgb(0, 123, 255); 
+            color: rgb(255, 255, 255); 
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(0, 86, 179); 
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to your Account</h1>
+    <a href="Checkbalance">Click here to check balance</a><br><br>
+    <a href="ChangePwd.html">Click here to change password</a><br><br>
+    <a href="Transfer.html">Click here to transfer amount</a><br><br>
+    <a href="GetStatement">Click here to get statement</a><br><br>
+    <a href="ApplyLoan.html">Click here to apply for a loan</a><br><br>
+
+    <form action="Logout">
+        <input type="submit" value="Logout"/>
+    </form>
+</body>
+</html>

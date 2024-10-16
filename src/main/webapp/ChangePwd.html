@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Change Password</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  form {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: inline-block;
+    width: 140px;
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+  }
+
+  input[type="password"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .button-container {
+    margin-top: 10px;
+  }
+
+  .home-button {
+    background-color: rgb(0, 123, 255);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .home-button:hover {
+    background-color: rgb(0, 100, 220);
+  }
+
+  br {
+    line-height: 10px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Please enter your new password</h2>
+
+<form action="ChangePassword">
+
+    <label>New Password</label> 
+    <input type="password" name="npwd" /><br><br> 
+
+    <label>Confirm Password</label> 
+    <input type="password" name="cpwd" /><br><br> 
+
+    <input type="submit" value="Submit">
+
+</form>
+
+<div class="button-container">
+    <a href="Home.html" class="home-button">Go Back to Home</a>
+</div>
+
+</body>
+</html>
